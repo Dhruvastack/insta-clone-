@@ -1,3 +1,4 @@
+import React ,{useEffect,createContext} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
@@ -7,7 +8,12 @@ import Login from './components/screens/Login';
 import Signup from './components/screens/Signup';
 import Profile from './components/screens/Profile';
 import CreatePost from './components/screens/CreatePost';
+
+
+const UserContext =createContext() 
 function App() {
+
+
   return (
   <BrowserRouter>
   <NavBar/>
